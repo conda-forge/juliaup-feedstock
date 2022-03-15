@@ -1,5 +1,5 @@
 {% set name = "juliaup" %}
-{% set version = "1.5.37" %}
+{% set version = "1.5.38" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/JuliaLang/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0ba906ee94b323c9b72bdae27d74039fb0ab3340b33e6d68fda279b72848598d
+  sha256: 84b6216da3f1e1bec2a673e4fa11e570706c70abd8d8dae227fd77f0c5c8291b
 
 build:
   script:
@@ -32,7 +32,7 @@ about:
   home: https://github.com/JuliaLang/juliaup
   summary: Julia installer and version multiplexer
   license: MIT
-  license_file: 
+  license_file:
     - LICENSE
     - THIRDPARTY.yml
 

@@ -1,5 +1,5 @@
 {% set name = "juliaup" %}
-{% set version = "1.14.7" %}
+{% set version = "1.14.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/JuliaLang/{{ name }}/archive/v{{ version }}.zip
-  sha256: 4613e521725762d33709d9ab60bd1b3a176ebaf7873980982f73554aa96f5661
+  sha256: c5c632cdb174831b2678b654c11213d9abde542234e4fcc08f6ebeb68a91b396
 
 build:
   script:
@@ -21,10 +21,10 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
   run:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 
 test:
   commands:

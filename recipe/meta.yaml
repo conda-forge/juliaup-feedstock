@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/JuliaLang/{{ name }}/archive/v{{ version }}.zip
-  sha256: 30d3535c09bebc98879f5674680eb16b810c0cfa598b1358994da05338d64efa
+  sha256: a9a4c9f32cf768c100d17c0cbac4bc78ff3c93820a404b4bf15775ee6dd8750f
 
 build:
   script:

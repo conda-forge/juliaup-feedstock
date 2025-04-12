@@ -1,5 +1,5 @@
 {% set name = "juliaup" %}
-{% set version = "1.17.16" %}
+{% set version = "1.17.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/JuliaLang/{{ name }}/archive/v{{ version }}.zip
-  sha256: b0267c9133cb9343960899e6d052acb355be6ffada919e0816b7dffff7333d12
+  sha256: a59abf97a2904b01e81fd7aa9f19b8d631abe4916afaccfb89f85b90a8eb2781
 
 build:
   script:
